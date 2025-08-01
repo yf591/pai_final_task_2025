@@ -1,0 +1,132 @@
+# =======================================================
+# .gitignore for ROS2 Python Project on macOS with VSCode
+# =======================================================
+
+# 1. OS-specific files (macOS, Windows, Linux)
+# -------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+*~
+*.swp
+
+# 2. VSCode specific files
+# -------------------------------------------------------
+# 基本的に.vscodeフォルダは無視するが、チームで共有すべき設定は例外とする
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# 3. ROS 2 / colcon build artifacts
+# これらはソースコードから自動生成されるため、絶対にGitに含めない
+# -------------------------------------------------------
+/build/
+/install/
+/log/
+
+# 4. Python specific files
+# -------------------------------------------------------
+# Compiled files - 全ての場所の__pycache__を除外
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/
+build/egg/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Test & coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE files
+*.swp
+*.swo
+*~
+
+# 5. ROS2 specific files
+# -------------------------------------------------------
+# ROS2 setup files (colconで生成されるもの)
+**/colcon_build.rc
+**/colcon_command_prefix_*.sh
+**/colcon_command_prefix_*.sh.env
+
+# ROS2 generated files
+**/prefix_override/
+**/resource/*/
+**/share/*/hook/
+**/share/*/package.*
+**/share/ament_index/
+
+# Launch file pyc files
+**/__pycache__/
+launch/__pycache__/
+
+# 6. Gazebo and simulation files
+# -------------------------------------------------------
+# Gazebo logs
+.gazebo/
+*.log
+
+# 7. Temporary and backup files
+# -------------------------------------------------------
+*.tmp
+*.bak
+*.orig
+*~
+.#*
+#*#
+
+# 8. Project-specific documentation files
+# -------------------------------------------------------
+# 動画撮影ガイド（開発用ドキュメント）
+VIDEO_GUIDE.md
+
+# 技術マニュアル（ROS2 Docker環境構築用）
+技術マニュアル_ROS2_Docker.md
+
+# 9. Development manuals
+開発マニュアル_PhysicalAI2025最終課題.md
