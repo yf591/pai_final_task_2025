@@ -38,7 +38,7 @@
 - **状態管理**: AI強化ステートマシンによる効率的タスク実行
 - **完了確認**: 各配送の成功確認とログ出力
 
-## �️ プロジェクト構造
+## プロジェクト構造
 
 ```
 src/final_project_pkg/
@@ -111,14 +111,14 @@ ros2 launch final_project_pkg final_project_autonomous.launch.py
 ```
 
 ### 4. 動作確認
-ブラウザで `http://localhost:6080/` を開き、以下を確認：
+ブラウザで `http://localhost:6080/` を開き、以下を確認。
 1. Gazebo シミュレーターの起動
 2. TurtleBot3 の出現
 3. AI による自律配送タスクの実行
 
 ## 🔄 動作フロー
 
-ロボットは以下の段階的なタスクを自律実行します：
+ロボットは以下の段階的なタスクを自律実行します。
 
 ### Phase 1: 初期化 (0-3秒)
 - AI システムの初期化
@@ -151,7 +151,7 @@ ros2 launch final_project_pkg final_project_autonomous.launch.py
 - ベース位置への帰還
 - システム終了
 
-## �️ 主要コマンドリファレンス
+## 🛠️ 主要コマンドリファレンス
 
 ### Docker 関連
 ```bash
@@ -235,7 +235,6 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gaz
 - [技術マニュアル_ROS2_Docker.md](../技術マニュアル_ROS2_Docker.md) - 開発環境の詳細設定
 - [開発マニュアル_PhysicalAI2025最終課題.md](../開発マニュアル_PhysicalAI2025最終課題.md) - プロジェクト開発ガイド
 - [ROS2 公式ドキュメント](https://docs.ros.org/en/humble/)
-- [TurtleBot3 公式ガイド](https://emanual.robotis.com/docs/en/platform/turtlebot3/)
 
 ---
 
