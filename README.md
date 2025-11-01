@@ -86,7 +86,7 @@ docker run -d -p 6080:80 \
 ### 2. プロジェクトのビルド
 
 ```bash
-# VSCode内ターミナルまたはDockerコンテナ内で実行
+# Dockerコンテナ内のターミネーターで実行
 cd /root/ros2_ws
 colcon build --packages-select final_project_pkg
 source install/setup.bash
